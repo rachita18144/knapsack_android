@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KNAPSACK"
+                android:font="@font/dejavusans"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textFontWeight="600" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Preferences"
+            android:font="@font/dejavusans"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:layout_margin="30dp"
+            android:textFontWeight="600" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/view2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="30dp"
+                android:background="#ffffff"
+                android:shape="ring"
+                app:cardCornerRadius="1000dp">
+
+                <ImageView
+                    android:id="@+id/profile_img_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_img">
+                </ImageView>
+            </com.google.android.material.card.MaterialCardView>
+                <TextView
+                    android:id="@+id/upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UPLOAD"
+                    android:font="@font/dejavusans"
+                    android:textColor="#42b1f4"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="  Edit your name"
+                    android:padding="8dp"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textColorHint="#fff" />
+
+                <EditText
+                    android:id="@+id/edit_phone"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="  Edit your phone"
+                    android:textSize="15dp"
+                    android:padding="8dp"
+                    android:layout_margin="5dp"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    android:textColorHint="#fff" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:layout_weight="50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Settings"
+            android:textFontWeight="600"
+            android:font="@font/dejavusans"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/darkGrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Let other people view your profile"
+                    android:font="@font/dejavusans"
+                    android:textSize="15dp"
+                    android:textColor="#FFFFFF"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/switch_button_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Let other people view your trips"
+                    android:font="@font/dejavusans"
+                    android:textSize="15dp"
+                    android:textColor="#FFFFFF"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/switch_button_trips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Broadcast your location to trusted contacts"
+                    android:font="@font/dejavusans"
+                    android:textSize="15dp"
+                    android:textColor="#FFFFFF"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/switch_button_broadcast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="500"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trusted Contacts"
+                android:textFontWeight="600"
+                android:font="@font/dejavusans"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/darkGrey" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/sos_name1"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="  Contact Name"
+                    android:padding="8dp"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:layout_margin="5dp"
+                    android:textColorHint="#fff" />
+
+                <EditText
+                    android:id="@+id/sos_phone1"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="  Contact Phone"
+                    android:textSize="15dp"
+                    android:padding="8dp"
+                    android:textColor="#fff"
+                    android:layout_margin="5dp"
+                    android:textColorHint="#fff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/sos_name2"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="  Contact Name"
+                    android:padding="8dp"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:layout_margin="5dp"
+                    android:textColorHint="#fff" />
+
+                <EditText
+                    android:id="@+id/sos_phone2"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="  Contact Phone"
+                    android:textSize="15dp"
+                    android:padding="8dp"
+                    android:layout_margin="5dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/saveSosDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_button"
+                android:layout_margin="5dp"
+                android:text="SAVE"
+                android:textColor="#FFF"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

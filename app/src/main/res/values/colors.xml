@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="teal">#008080</color>
+    <color name="mygrey">#4e4e4e</color>
+    <color name="blue">#0d455b</color>
+    <color name="darkgrey">#2b2b2b</color>
+    <color name="knap">#00a57a</color>
+    <color name="lightgrey">#606060</color>
+    <color name="sos">#e74c3c</color>
+    <color name="lightred">#f29a91</color>
+    <color name="colorApp">#2B2B2B</color>
+    <color name="button">#53bd9d</color>
+    <color name="grey">#D3D3D3</color>
+    <color name="darkGrey">#A9A9A9</color>
+    <color name="black">#131313</color>
+    <color name="white">#FFFFFF</color>
+    <color name="editTextBack">#2b2b2b</color>
+
+</resources>

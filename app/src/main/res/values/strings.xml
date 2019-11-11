@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Knapsack</string>
+    <string name="login">LOGIN</string>
+    <string name="forgot">forgot password</string>
+    <string name="title_home">HOME</string>
+    <string name="title_sos">SOS</string>
+    <string name="title_mytrips">MY TRIPS</string>
+    <string name="title_profile">PROFILE</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
